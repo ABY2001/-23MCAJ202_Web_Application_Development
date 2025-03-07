@@ -1,0 +1,47 @@
+.main-container{
+    padding: 20px 20px 20px 20px;  
+    min-height: 37vh;
+    width: 40%;
+    border: 1px solid aqua;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.label-styles {
+    display: grid;
+    font-size: large;
+    font-family: emoji;
+    font-weight: 500;
+}
+.field-styles{
+    block-size: 30px;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+}
+.two-field-styles{
+    display: flex;
+    justify-content: space-between;
+}
+.button-styles {
+    width: 100%;
+    height: 29px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.button-styles:hover{
+    color: aquamarine;
+    background-color: black;
+    border: 0;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
