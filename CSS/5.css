@@ -1,47 +1,104 @@
-.main-container{
-    padding: 20px 20px 20px 20px;  
-    min-height: 37vh;
-    width: 40%;
-    border: 1px solid aqua;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
 }
 
-.label-styles {
-    display: grid;
-    font-size: large;
-    font-family: emoji;
-    font-weight: 500;
-}
-.field-styles{
-    block-size: 30px;
-    border: 1px solid aquamarine;
-    border-radius: 10px;
-}
-.two-field-styles{
-    display: flex;
-    justify-content: space-between;
-}
-.button-styles {
-    width: 100%;
-    height: 29px;
-    border-radius: 10px;
-    margin-top: 10px;
-    background-color: aquamarine;
-    cursor: pointer;
-}
-.button-styles:hover{
-    color: aquamarine;
-    background-color: black;
-    border: 0;
+.main-container {
+    width: 400px;
+    max-width: 90%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .heading {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.heading h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.label-styles {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.field-styles {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.field-styles:focus {
+    outline: none;
+    border-color: #181818;
+    box-shadow:  1px 1px 1px 1px #181818;
+    background-color: #fff;
+}
+
+.field-styles::placeholder {
+    color: #aaa;
+}
+
+.gender-options {
     display: flex;
+    gap: 15px;
     align-items: center;
-    justify-content: center;
+}
+
+.gender-options input {
+    margin-right: 5px;
+}
+
+.button-styles {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-styles:hover {
+    background: linear-gradient(135deg, #3a3a3a, #5a5a5a);
+}
+
+.reset-button {
+    background: #c0392b;
+}
+
+.reset-button:hover {
+    background: #e74c3c;
 }

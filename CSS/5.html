@@ -8,36 +8,49 @@
 </head>
 <body>
     <div class="main-container">
-        <span class="heading"><h1>SIGN UP</h1></span>
-           <form>
+        <div class="heading">
+            <h1>CREATE ACCOUNT</h1>
+        </div>
+        <form id="signupForm">
             <div class="label-styles">
-                <label for="name">User name</label>
-                <input class="field-styles" type="text"name ="name" placeholder="enter your name">
+                <label for="name">Username</label>
+                <input class="field-styles" type="text" id="name" name="name" placeholder="Enter your username" required>
+            </div>
+            
+            <div class="label-styles">
+                <label for="email">Email</label>
+                <input class="field-styles" type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="label-styles">
+                <label for="password">Password</label>
+                <input class="field-styles" type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            
+            <div class="label-styles">
+                <label for="confirm-password">Confirm Password</label>
+                <input class="field-styles" type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            
+            <div class="label-styles">
+                <label for="phone">Phone Number</label>
+                <input class="field-styles" type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
             </div>
             <div class="label-styles">
-                <label for="name">Email</label>
-                <input class="field-styles" type="email"name ="email" placeholder="enter your email">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </div>
             </div>
-            <div class="label-styles">
-                <label for="password">password</label>
-                <input class="field-styles" type="password"name ="password" placeholder="enter your password">
-            </div>
-            <div class="label-styles">
-                <label for="password">Confirm password</label>
-                <input class="field-styles" type="password"name ="confirm-password" placeholder="confirm password">
-            </div>
-            <button class="button-styles" type="submit">Submit</button>
-            <!-- <div class="two-field-styles">
-                <span>
-                    <label for="phone">phone number</label>
-                    <input type="number"name ="phone" placeholder="enter your phonenumber">
-                </span>
-                <span>
-                    <label for="phone">phone number</label>
-                    <input type="number"name ="phone" placeholder="enter your phonenumber">
-                </span>
-            </div> -->
-           </form>
+            <button class="button-styles" type="submit">Sign Up</button>
+            <button class="button-styles reset-button" type="reset">Reset</button>
+        </form>
     </div>
-</body>
 </html>
