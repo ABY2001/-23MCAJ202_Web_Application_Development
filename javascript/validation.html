@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+}
+
+.main-container {
+    width: 400px;
+    max-width: 90%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.heading h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.label-styles {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.field-styles {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.field-styles:focus {
+    outline: none;
+    border-color: #181818;
+    box-shadow:  1px 1px 1px 1px #181818;
+    background-color: #fff;
+}
+
+.field-styles::placeholder {
+    color: #aaa;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.gender-options input {
+    margin-right: 5px;
+}
+
+.button-styles {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient( #1e1e1e, #3a3a3a);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-styles:hover {
+    background: linear-gradient(#3a3a3a, #5a5a5a);
+}
+
+.reset-button {
+    background: #c0392b;
+}
+
+.reset-button:hover {
+    background: #e74c3c;
+}
+.error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+}
+</style>
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <h1>CREATE ACCOUNT</h1>
+        </div>
+        <form id="signupForm">
+            <div class="label-styles">
+                <label for="name">Username</label>
+                <input class="field-styles" type="text" id="name" name="name" placeholder="Enter your username" >
+                <span id="nameError" class="error-message"></span>
+            </div>
+            
+            <div class="label-styles">
+                <label for="email">Email</label>
+                <input class="field-styles" type="email" id="email" name="email" placeholder="Enter your email" >
+                <span id="emailError" class="error-message"></span>
+            </div>
+            
+            <div class="label-styles">
+                <label for="password">Password</label>
+                <input class="field-styles" type="password" id="password" name="password" placeholder="Enter your password" >
+                <span id="passwordError" class="error-message"></span>
+            </div>
+            <div class="label-styles">
+                <label for="phone">Phone Number</label>
+                <input class="field-styles" type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                <span id="phoneError" class="error-message"></span>
+            </div>
+            <button class="button-styles" type="submit">Sign Up</button>
+            <button class="button-styles reset-button" type="reset">Reset</button>
+        </form>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>

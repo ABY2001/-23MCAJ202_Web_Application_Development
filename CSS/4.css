@@ -1,6 +1,8 @@
 .external-style {
     color: blue;
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(5, 245, 37);
+    cursor: pointer;
+    border-radius: 10px;
 }
