@@ -89,7 +89,7 @@
             </tr>
 
             <?php
-            // Step 1: Create an array of Indian Cricket Players
+            //  Creating an array of Indian Cricket Players
             $players = array("Virat Kohli", "Rohit Sharma", "MS Dhoni", "Sachin Tendulkar", "Kapil Dev", 
                              "Rahul Dravid", "Sourav Ganguly", "Yuvraj Singh", "Jasprit Bumrah", "Hardik Pandya");
 
@@ -106,7 +106,7 @@
                 }
             }
 
-            // Initial display
+            // F    unction to display array data in table
             displayTable($players);
 
           
